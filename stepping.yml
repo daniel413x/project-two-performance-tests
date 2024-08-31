@@ -1,0 +1,25 @@
+version: 1.0
+
+execution:
+  - scenario: inventory_api_test
+    concurrency: 1
+    ramp-up: 5s
+    hold-for: 1m
+
+  - scenario: dashboard_visit_test
+    concurrency: 5
+    ramp-up: 5s
+    hold-for: 1m
+
+scenarios:
+  inventory_api_test:
+    script: dashboard-inventory-api-test.jmx
+
+  dashboard_visit_test:
+    script: dashboard-visit-test.jmx
+
+reporting:
+  - module: final-stats
+  - module: console
+  - module: junit-xml
+  - module: json
