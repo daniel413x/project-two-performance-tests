@@ -9,7 +9,8 @@ execution:
   - scenario: dashboard_visit_test
     concurrency: 5
     ramp-up: 5s
-    hold-for: 1m
+    hold-for: 20s
+    iterations: 200
 
 scenarios:
   inventory_api_test:
