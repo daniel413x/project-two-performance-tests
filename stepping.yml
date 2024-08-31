@@ -1,15 +1,16 @@
 version: 1.0
 
 # 100 requests
-# will apply to all scenarios
-default-execution:
-  concurrency: 5
-  ramp-up: 5s
-  hold-for: 20s
-
 execution:
   - scenario: inventory_api_test
+    concurrency: 2
+    ramp-up: 5s
+    hold-for: 10s
+
   - scenario: dashboard_visit_test
+    concurrency: 2
+    ramp-up: 5s
+    hold-for: 10s
 
 scenarios:
   inventory_api_test:
