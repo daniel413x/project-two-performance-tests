@@ -1,23 +1,22 @@
 version: 1.0
 
+# 100 requests
+# will apply to all scenarios
+default-execution:
+  concurrency: 2
+  ramp-up: 5s
+  hold-for: 10s
+
 execution:
   - scenario: inventory_api_test
-    concurrency: 1
-    ramp-up: 5s
-    hold-for: 1m
-
   - scenario: dashboard_visit_test
-    concurrency: 5
-    ramp-up: 5s
-    hold-for: 20s
-    iterations: 200
 
 scenarios:
   inventory_api_test:
     script: dashboard-inventory-api-test.jmx
 
   dashboard_visit_test:
-    script: dashboard-visit-test.jmx
+    script: dashboard-page-visit-test.jmx
 
 reporting:
   - module: final-stats
