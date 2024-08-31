@@ -3,14 +3,12 @@ version: 1.0
 # 100 requests
 execution:
   - scenario: inventory_api_test
-    concurrency: 2
-    ramp-up: 5s
-    hold-for: 10s
+    concurrency: 5
+    iterations: 20
 
   - scenario: dashboard_visit_test
-    concurrency: 2
-    ramp-up: 5s
-    hold-for: 10s
+    concurrency: 5
+    iterations: 20
 
 scenarios:
   inventory_api_test:
