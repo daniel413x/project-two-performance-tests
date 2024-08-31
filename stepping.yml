@@ -22,4 +22,3 @@ reporting:
   - module: final-stats
   - module: console
   - module: junit-xml
-  - module: json
