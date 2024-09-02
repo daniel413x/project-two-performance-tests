@@ -18,6 +18,10 @@ execution:
     concurrency: 5
     iterations: 20
 
+  - scenario: get_api_inventory_category_1
+    concurrency: 5
+    iterations: 20
+
 scenarios:
   get_api_inventory:
     script: get-api-inventory-test-plan.jmx
@@ -30,6 +34,9 @@ scenarios:
 
   get_api_product_detailed_categoryid_1:
     script: get-api-product-detailed-categoryid-1-test-plan.jmx
+
+  get_api_inventory_category_1:
+    script: get-api-inventory-category-1-test-plan.jmx
 
 reporting:
   - module: final-stats
