@@ -2,6 +2,8 @@ version: 1.0
 
 # 100 requests
 execution:
+  # name convention as follows: start with method e.g. get, post, follow with path tested in snake case
+  # for simplicity, params and slashes reduced alike
   - scenario: get_api_inventory
     concurrency: 5
     iterations: 20
@@ -18,6 +20,10 @@ execution:
     concurrency: 5
     iterations: 20
 
+  - scenario: get_api_category_1
+    concurrency: 5
+    iterations: 20
+
   - scenario: get_api_inventory_category_1
     concurrency: 5
     iterations: 20
@@ -31,6 +37,9 @@ scenarios:
 
   get_api_category:
     script: get-api-category-test-plan.jmx
+
+  get_api_category_1:
+    script: get-api-category-1-test-plan.jmx
 
   get_api_product_detailed_categoryid_1:
     script: get-api-product-detailed-categoryid-1-test-plan.jmx
