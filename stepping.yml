@@ -14,12 +14,19 @@ execution:
     concurrency: 5
     iterations: 20
 
+  - scenario: get_api_category
+    concurrency: 5
+    iterations: 20
+
 scenarios:
   get_api_inventory:
     script: get-api-inventory-test-plan.jmx
 
   get_api_warehouse:
     script: get-api-warehouse-test-plan.jmx
+
+  get_api_category:
+    script: get-api-category-test-plan.jmx
 
   get_api_product_detailed_categoryid_1:
     script: get-api-product-detailed-categoryid-1-test-plan.jmx
