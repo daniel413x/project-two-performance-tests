@@ -2,20 +2,20 @@ version: 1.0
 
 # 100 requests
 execution:
-  - scenario: inventory_api_test
+  - scenario: get_api_inventory
     concurrency: 5
     iterations: 20
 
-  - scenario: dashboard_visit_test
+  - scenario: get_api_product_detailed_categoryid_1
     concurrency: 5
     iterations: 20
 
 scenarios:
-  inventory_api_test:
-    script: dashboard-inventory-api-test.jmx
+  get_api_inventory:
+    script: get-api-inventory-test-plan.jmx
 
-  dashboard_visit_test:
-    script: dashboard-page-visit-test.jmx
+  get_api_product_detailed_categoryid_1:
+    script: get-api-product-detailed-categoryid-1-test-plan.jmx
 
 reporting:
   - module: final-stats
