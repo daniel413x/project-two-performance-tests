@@ -4,9 +4,7 @@ version: 1.0
 execution:
   # name convention as follows: start with method e.g. get, post, follow with path tested in snake case
   # for simplicity, params and slashes reduced alike
-  - scenario: post_api_testing_reset_test_plan
-    concurrency: 1
-    iterations: 1
+  - scenario: post_api_testing_reset
     start: 0
 
   - scenario: get_api_inventory
@@ -46,7 +44,7 @@ execution:
   - scenario: delete_api_category
     start: 45
 
-  - scenario: post_api_testing_reset_test_plan
+  - scenario: post_api_testing_reset
     start: 55
 
 scenarios:
