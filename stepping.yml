@@ -5,7 +5,7 @@ execution:
   # name convention as follows: start with method e.g. get, post, follow with path tested in snake case
   # for simplicity, params and slashes reduced alike
   - scenario: post_api_testing_reset
-    start: 0
+    steps: 0
 
   - scenario: get_api_inventory
     concurrency: 5
@@ -36,16 +36,16 @@ execution:
     iterations: 20
 
   - scenario: post_api_category
-    start: 25
+    steps: 25
 
   - scenario: put_api_category
-    start: 35
+    steps: 35
 
   - scenario: delete_api_category
-    start: 45
+    steps: 45
 
   - scenario: post_api_testing_reset
-    start: 55
+    steps: 55
 
 scenarios:
   get_api_inventory:
