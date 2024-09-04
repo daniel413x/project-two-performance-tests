@@ -1,16 +1,15 @@
 version: 1.0
 
-# 100 requests
 execution:
   # name convention as follows: start with method e.g. get, post, follow with path tested in snake case
   # for simplicity, params and slashes reduced alike
-  - scenario: post_api_testing_reset
-    steps: 0
+  - scenario: post_put_delete_api_warehouse_category_inventory_product
 
   - scenario: get_api_inventory
     concurrency: 5
     iterations: 20
 
+  # 100 requests
   - scenario: get_api_product_detailed_categoryid_1
     concurrency: 5
     iterations: 20
@@ -35,19 +34,10 @@ execution:
     concurrency: 5
     iterations: 20
 
-  - scenario: post_api_category
-    steps: 25
-
-  - scenario: put_api_category
-    steps: 35
-
-  - scenario: delete_api_category
-    steps: 45
-
-  - scenario: post_api_testing_reset
-    steps: 55
-
 scenarios:
+  post_put_delete_api_warehouse_category_inventory_product:
+    script: post-put-delete-api-warehouse-category-inventory-product-test-plan.jmx
+
   get_api_inventory:
     script: get-api-inventory-test-plan.jmx
 
@@ -68,18 +58,6 @@ scenarios:
 
   get_api_inventory_category_1:
     script: get-api-inventory-category-1-test-plan.jmx
-
-  post_api_testing_reset:
-    script: post-api-testing-reset-test-plan.jmx
-
-  post_api_category:
-    script: post-api-category-test-plan.jmx
-
-  put_api_category:
-    script: put-api-category-test-plan.jmx
-
-  delete_api_category:
-    script: delete-api-category-test-plan.jmx
 
 reporting:
   - module: final-stats
