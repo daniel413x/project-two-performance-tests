@@ -25,5 +25,3 @@ For simplicity, params and slashes are reduced alike:
 
 get-api-warehouse-1-test-plan.jmx <span style="opacity:50%"># http://.../api/warehouse/1</span> \
 get-api-inventory-category-1-test-plan.jmx <span style="opacity:50%"># http://.../api/inventory?category=1</span>
-
-project-two-performance-tests .jmx files are named according to the following convention: start with method e.g. get, post, follow with the *path tested* in snake case:
