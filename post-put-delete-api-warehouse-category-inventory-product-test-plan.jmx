@@ -274,12 +274,12 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <CriticalSectionController guiclass="CriticalSectionControllerGui" testclass="CriticalSectionController" testname="Critical Section Controller" enabled="true">
+        <CriticalSectionController guiclass="CriticalSectionControllerGui" testclass="CriticalSectionController" testname="Critical Section Controller">
           <stringProp name="CriticalSectionController.lockName">global_lock</stringProp>
         </CriticalSectionController>
         <hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-            <stringProp name="LoopController.loops">50</stringProp>
+            <stringProp name="LoopController.loops">100</stringProp>
           </LoopController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /api/inventory">
@@ -336,7 +336,7 @@
             </hashTree>
           </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-            <stringProp name="LoopController.loops">50</stringProp>
+            <stringProp name="LoopController.loops">100</stringProp>
           </LoopController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PUT /api/inventory/{id}">
@@ -393,7 +393,7 @@
             </hashTree>
           </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-            <stringProp name="LoopController.loops">50</stringProp>
+            <stringProp name="LoopController.loops">100</stringProp>
           </LoopController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DELETE /api/inventory/{id}" enabled="true">
@@ -475,7 +475,7 @@
         </CriticalSectionController>
         <hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-            <stringProp name="LoopController.loops">50</stringProp>
+            <stringProp name="LoopController.loops">100</stringProp>
           </LoopController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /api/product">
@@ -524,7 +524,7 @@
             </hashTree>
           </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-            <stringProp name="LoopController.loops">50</stringProp>
+            <stringProp name="LoopController.loops">100</stringProp>
           </LoopController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PUT /api/product/{id}">
@@ -573,7 +573,7 @@
             </hashTree>
           </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-            <stringProp name="LoopController.loops">50</stringProp>
+            <stringProp name="LoopController.loops">100</stringProp>
           </LoopController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DELETE /api/product/{id}">
@@ -655,7 +655,7 @@
         </CriticalSectionController>
         <hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-            <stringProp name="LoopController.loops">50</stringProp>
+            <stringProp name="LoopController.loops">100</stringProp>
           </LoopController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /api/category/{id}">
@@ -700,7 +700,7 @@
             </hashTree>
           </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-            <stringProp name="LoopController.loops">50</stringProp>
+            <stringProp name="LoopController.loops">100</stringProp>
           </LoopController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PUT /api/category/{id}">
@@ -745,7 +745,7 @@
             </hashTree>
           </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-            <stringProp name="LoopController.loops">50</stringProp>
+            <stringProp name="LoopController.loops">100</stringProp>
           </LoopController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DELETE /api/category/{id}">
@@ -827,7 +827,7 @@
         </CriticalSectionController>
         <hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-            <stringProp name="LoopController.loops">50</stringProp>
+            <stringProp name="LoopController.loops">100</stringProp>
           </LoopController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /api/warehouse">
@@ -877,7 +877,7 @@
             </hashTree>
           </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-            <stringProp name="LoopController.loops">50</stringProp>
+            <stringProp name="LoopController.loops">100</stringProp>
           </LoopController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PUT /api/warehouse/{id}">
@@ -927,7 +927,7 @@
             </hashTree>
           </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-            <stringProp name="LoopController.loops">50</stringProp>
+            <stringProp name="LoopController.loops">100</stringProp>
           </LoopController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DELETE /api/warehouse/{id}">
