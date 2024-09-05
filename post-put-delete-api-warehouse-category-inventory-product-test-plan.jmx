@@ -35,7 +35,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
               <boolProp name="ResultCollector.error_logging">false</boolProp>
               <objProp>
                 <name>saveConfig</name>
@@ -94,7 +94,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="Content-Type" elementType="Header">
                   <stringProp name="Header.name">Content-Type</stringProp>
@@ -118,10 +118,7 @@
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;brand&quot;: &quot;JMeter Brand&quot;,&#xd;
-	&quot;category&quot;: {&#xd;
-		&quot;id&quot;: 1,&#xd;
-		&quot;name&quot;: &quot;JMeter Category&quot;&#xd;
-	},&#xd;
+	&quot;category&quot;: 1,&#xd;
 	&quot;description&quot;: &quot;JMeter description&quot;,&#xd;
 	&quot;name&quot;: &quot;JMeter Product&quot;,&#xd;
 	&quot;price&quot;: &quot;11.99&quot;&#xd;
@@ -132,7 +129,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="Content-Type" elementType="Header">
                   <stringProp name="Header.name">Content-Type</stringProp>
@@ -169,7 +166,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="Content-Type" elementType="Header">
                   <stringProp name="Header.name">Content-Type</stringProp>
@@ -192,27 +189,10 @@
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-	&quot;product&quot;: {&#xd;
-		&quot;brand&quot;: &quot;JMeter Brand&quot;,&#xd;
-		&quot;category&quot;: &quot;Climbing Shoes&quot;,&#xd;
-		&quot;description&quot;: &quot;JMeter description&quot;,&#xd;
-		&quot;id&quot;: 1,&#xd;
-		&quot;inventory&quot;: null,&#xd;
-		&quot;name&quot;: &quot;JMeter Inventory&quot;,&#xd;
-		&quot;price&quot;: 11.99&#xd;
-	},&#xd;
+	&quot;product&quot;: 1,&#xd;
 	&quot;quantity&quot;: &quot;1&quot;,&#xd;
 	&quot;size&quot;: &quot;11&quot;,&#xd;
-	&quot;warehouse&quot;: {&#xd;
-		&quot;id&quot;: 1,&#xd;
-		&quot;city&quot;: &quot;Washington&quot;,&#xd;
-		&quot;maxCapacity&quot;: &quot;11000&quot;,&#xd;
-	     &quot;currentCapacity&quot;: &quot;0&quot;,&#xd;
-		&quot;name&quot;: &quot;JMeter Warehouse&quot;,&#xd;
-		&quot;state&quot;: &quot;DC&quot;,&#xd;
-		&quot;streetAddress&quot;: &quot;123 JMeter Drive&quot;,&#xd;
-		&quot;zipCode&quot;: &quot;20008&quot;&#xd;
-	}&#xd;
+	&quot;warehouse&quot;: 1&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -220,7 +200,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="Content-Type" elementType="Header">
                   <stringProp name="Header.name">Content-Type</stringProp>
@@ -243,7 +223,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
               <boolProp name="ResultCollector.error_logging">false</boolProp>
               <objProp>
                 <name>saveConfig</name>
@@ -281,43 +261,6 @@
             </ResultCollector>
             <hashTree/>
           </hashTree>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
-            <boolProp name="ResultCollector.error_logging">false</boolProp>
-            <objProp>
-              <name>saveConfig</name>
-              <value class="SampleSaveConfiguration">
-                <time>true</time>
-                <latency>true</latency>
-                <timestamp>true</timestamp>
-                <success>true</success>
-                <label>true</label>
-                <code>true</code>
-                <message>true</message>
-                <threadName>true</threadName>
-                <dataType>true</dataType>
-                <encoding>false</encoding>
-                <assertions>true</assertions>
-                <subresults>true</subresults>
-                <responseData>false</responseData>
-                <samplerData>false</samplerData>
-                <xml>false</xml>
-                <fieldNames>true</fieldNames>
-                <responseHeaders>false</responseHeaders>
-                <requestHeaders>false</requestHeaders>
-                <responseDataOnError>false</responseDataOnError>
-                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                <assertionsResultsToSave>0</assertionsResultsToSave>
-                <bytes>true</bytes>
-                <sentBytes>true</sentBytes>
-                <url>true</url>
-                <threadCounts>true</threadCounts>
-                <idleTime>true</idleTime>
-                <connectTime>true</connectTime>
-              </value>
-            </objProp>
-            <stringProp name="filename"></stringProp>
-          </ResultCollector>
-          <hashTree/>
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
@@ -331,7 +274,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <CriticalSectionController guiclass="CriticalSectionControllerGui" testclass="CriticalSectionController" testname="Critical Section Controller">
+        <CriticalSectionController guiclass="CriticalSectionControllerGui" testclass="CriticalSectionController" testname="Critical Section Controller" enabled="true">
           <stringProp name="CriticalSectionController.lockName">global_lock</stringProp>
         </CriticalSectionController>
         <hashTree>
@@ -352,26 +295,10 @@
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">{&#xd;
-	&quot;product&quot;: {&#xd;
-		&quot;brand&quot;: &quot;JMeter Brand&quot;,&#xd;
-		&quot;category&quot;: &quot;JMeter Category&quot;,&#xd;
-		&quot;description&quot;: &quot;JMeter description&quot;,&#xd;
-		&quot;name&quot;: &quot;JMeter Product&quot;,&#xd;
-		&quot;price&quot;: &quot;11.99&quot;,&#xd;
-		&quot;id&quot;: 1&#xd;
-	},&#xd;
+	&quot;product&quot;: 1,&#xd;
 	&quot;quantity&quot;: &quot;1&quot;,&#xd;
 	&quot;size&quot;: &quot;${increment_helper}&quot;,&#xd;
-	&quot;warehouse&quot;: {&#xd;
-		&quot;city&quot;: &quot;Washington&quot;,&#xd;
-		&quot;maxCapacity&quot;: &quot;11000&quot;,&#xd;
-	     &quot;currentCapacity&quot;: &quot;200&quot;,&#xd;
-		&quot;name&quot;: &quot;JMeter Warehouse&quot;,&#xd;
-		&quot;state&quot;: &quot;DC&quot;,&#xd;
-		&quot;streetAddress&quot;: &quot;123 JMeter Drive&quot;,&#xd;
-		&quot;zipCode&quot;: &quot;20008&quot;,&#xd;
-		&quot;id&quot;: 1&#xd;
-	}&#xd;
+	&quot;warehouse&quot;: 1&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -379,7 +306,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="increment_helper">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="increment_helper" enabled="true">
                 <stringProp name="CounterConfig.start">0</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -388,7 +315,7 @@
                 <boolProp name="CounterConfig.per_user">false</boolProp>
               </CounterConfig>
               <hashTree/>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_post">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_post" enabled="true">
                 <stringProp name="CounterConfig.start">2</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -397,7 +324,7 @@
                 <boolProp name="CounterConfig.per_user">false</boolProp>
               </CounterConfig>
               <hashTree/>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
@@ -425,26 +352,10 @@
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">{&#xd;
-	&quot;product&quot;: {&#xd;
-		&quot;brand&quot;: &quot;JMeter Brand&quot;,&#xd;
-		&quot;category&quot;: &quot;JMeter Category&quot;,&#xd;
-		&quot;description&quot;: &quot;JMeter description&quot;,&#xd;
-		&quot;name&quot;: &quot;JMeter Product&quot;,&#xd;
-		&quot;price&quot;: &quot;11.99&quot;,&#xd;
-		&quot;id&quot;: 1&#xd;
-	},&#xd;
+	&quot;product&quot;: 1,&#xd;
 	&quot;quantity&quot;: &quot;1&quot;,&#xd;
 	&quot;size&quot;: &quot;${increment_helper}&quot;,&#xd;
-	&quot;warehouse&quot;: {&#xd;
-		&quot;id&quot;: 1,&#xd;
-		&quot;city&quot;: &quot;Washington&quot;,&#xd;
-	     &quot;currentCapacity&quot;: &quot;200&quot;,&#xd;
-		&quot;maxCapacity&quot;: &quot;11000&quot;,&#xd;
-		&quot;name&quot;: &quot;JMeter Warehouse&quot;,&#xd;
-		&quot;state&quot;: &quot;DC&quot;,&#xd;
-		&quot;streetAddress&quot;: &quot;123 JMeter Drive&quot;,&#xd;
-		&quot;zipCode&quot;: &quot;20008&quot;&#xd;
-	}&#xd;
+	&quot;warehouse&quot;: 1&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -452,7 +363,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="increment_helper">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="increment_helper" enabled="true">
                 <stringProp name="CounterConfig.start">200</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -461,7 +372,7 @@
                 <boolProp name="CounterConfig.per_user">false</boolProp>
               </CounterConfig>
               <hashTree/>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
@@ -470,7 +381,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_put">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_put" enabled="true">
                 <stringProp name="CounterConfig.start">2</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -485,7 +396,7 @@
             <stringProp name="LoopController.loops">50</stringProp>
           </LoopController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DELETE /api/inventory/{id}">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DELETE /api/inventory/{id}" enabled="true">
               <stringProp name="HTTPSampler.domain">crag-supply-co-env-4.eba-ndsnmqsj.us-east-1.elasticbeanstalk.com</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.path">/api/inventory/${incremented_id_delete}</stringProp>
@@ -498,7 +409,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_delete">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_delete" enabled="true">
                 <stringProp name="CounterConfig.start">2</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -581,10 +492,7 @@
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">{&#xd;
 	&quot;brand&quot;: &quot;JMeter Brand&quot;,&#xd;
-	&quot;category&quot;: {&#xd;
-		&quot;id&quot;: 1,&#xd;
-		&quot;name&quot;: &quot;JMeter Category&quot;&#xd;
-	},&#xd;
+	&quot;category&quot;: 1,&#xd;
 	&quot;description&quot;: &quot;JMeter description&quot;,&#xd;
 	&quot;name&quot;: &quot;JMeter Product ${incremented_id_post}&quot;,&#xd;
 	&quot;price&quot;: &quot;11.99&quot;&#xd;
@@ -595,7 +503,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_post">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_post" enabled="true">
                 <stringProp name="CounterConfig.start">2</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -604,7 +512,7 @@
                 <boolProp name="CounterConfig.per_user">false</boolProp>
               </CounterConfig>
               <hashTree/>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
@@ -633,10 +541,7 @@
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">{&#xd;
 	&quot;brand&quot;: &quot;JMeter Brand&quot;,&#xd;
-	&quot;category&quot;: {&#xd;
-		&quot;id&quot;: 1,&#xd;
-		&quot;name&quot;: &quot;JMeter Category&quot;&#xd;
-	},&#xd;
+	&quot;category&quot;: 1,&#xd;
 	&quot;description&quot;: &quot;JMeter description&quot;,&#xd;
 	&quot;name&quot;: &quot;JMeter Product ${incremented_id_put}&quot;,&#xd;
 	&quot;price&quot;: &quot;11.99&quot;&#xd;
@@ -647,7 +552,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
@@ -656,7 +561,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_put">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_put" enabled="true">
                 <stringProp name="CounterConfig.start">2</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -684,7 +589,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_delete">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_delete" enabled="true">
                 <stringProp name="CounterConfig.start">1</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -774,7 +679,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_post">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_post" enabled="true">
                 <stringProp name="CounterConfig.start">2</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -783,7 +688,7 @@
                 <boolProp name="CounterConfig.per_user">false</boolProp>
               </CounterConfig>
               <hashTree/>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
@@ -819,7 +724,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
@@ -828,7 +733,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_put">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_put" enabled="true">
                 <stringProp name="CounterConfig.start">2</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -856,7 +761,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_delete">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_delete" enabled="true">
                 <stringProp name="CounterConfig.start">12</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -951,7 +856,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_post">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_post" enabled="true">
                 <stringProp name="CounterConfig.start">2</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -960,7 +865,7 @@
                 <boolProp name="CounterConfig.per_user">false</boolProp>
               </CounterConfig>
               <hashTree/>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
@@ -1001,7 +906,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
@@ -1010,7 +915,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_put">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_put" enabled="true">
                 <stringProp name="CounterConfig.start">2</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -1038,7 +943,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_delete">
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="incremented_id_delete" enabled="true">
                 <stringProp name="CounterConfig.start">2</stringProp>
                 <stringProp name="CounterConfig.end"></stringProp>
                 <stringProp name="CounterConfig.incr">1</stringProp>
@@ -1087,6 +992,69 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
+      </hashTree>
+      <PostThreadGroup guiclass="PostThreadGroupGui" testclass="PostThreadGroup" testname="tearDown Thread Group">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </PostThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /api/testing/reset">
+          <stringProp name="HTTPSampler.domain">crag-supply-co-env-4.eba-ndsnmqsj.us-east-1.elasticbeanstalk.com</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path">/api/testing/reset</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
       </hashTree>
     </hashTree>
   </hashTree>
